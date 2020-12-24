@@ -1,0 +1,9 @@
+Sizeof (char) = 1 bytes
+Sizeof (short) = 2 bytes
+Sizeof (int) = 4 bytes
+Sizeof (long) = 8 bytes
+Sizeof (float) = 4 bytes
+Sizeof (double) = 8 bytes
+Sizeof (1.55) = 8 bytes
+Sizeof (1.55L) = 16 bytes
+Sizeof (str) = 6 bytes
