@@ -26,9 +26,9 @@ int main()
 			i++;
 		}
 		if(d)
-			decimal = 10*decimal + ((int)a[i] - '0');
+			decimal = 10*decimal + (a[i] - '0');
 		else
-			integral = 10*integral + ((int)a[i]-'0');
+			integral = 10*integral + (a[i] -'0');
 	}
 	printf("Integral part = %d\nDecimal Part = 0.%d\nBinary Decimal Part = %d\n",integral,decimal,itobin(decimal));
 	
