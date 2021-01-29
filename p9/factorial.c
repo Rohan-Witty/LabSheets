@@ -1,14 +1,14 @@
 #include <stdio.h>
-long long factorial(long int);
+long double factorial(long int);
 int main()
 {
 	long n;
 	printf("Enter a long:\n");
 	scanf("%ld",&n);
-	printf("Factorial of %ld is: %lld\n",n, factorial(n));
+	printf("Factorial of %ld is: %Lf\n",n, factorial(n));
 	return 0;
 }
-long long factorial(long a)
+long double factorial(long a)
 {
 	if(a==0 || a==1)
 		return 1;
