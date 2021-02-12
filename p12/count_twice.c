@@ -68,11 +68,15 @@ int tern_rec_search(int a[], int n, int num)
 	{
 		if(a[(t*n)/3 - 1] == num)
 		{
-			return (t*n)/3 - 1;
+			return ((t*n)/3 - 1);
 		}
 		if(a[(t*n)/3 - 1] > num)
 		{
-			return ((t-1)*n)/3 + tern_rec_search(&a[((t-1)*n)/3], (n)/3 +1 ,num);
+			int x = tern_rec_search(&a[((t-1)*n)/3], (n)/3 +1 ,num);
+			if(x<0)
+				return x;
+			else
+				return ((t-1)*n)/3 + x;
 		}	
 	}
 		
